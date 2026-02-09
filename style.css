@@ -61,3 +61,12 @@ h5,
 h6 {
   text-wrap: balance;
 }
+
+/* GENERAL STYLES AND LAYOUT */
+
+:root {
+  --teal-500: hsl(179, 62%, 43%);
+  --green-400: hsl(71, 73%, 54%);
+  --teal-100: hsl(204, 43%, 93%);
+  --gray-500: hsl(218, 22%, 67%);
+}
