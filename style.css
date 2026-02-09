@@ -70,3 +70,17 @@ h6 {
   --teal-100: hsl(204, 43%, 93%);
   --gray-500: hsl(218, 22%, 67%);
 }
+
+@font-face {
+  font-family: "Karla Regular";
+  font-weight: 400;
+  font-display: swap;
+  src: url(./assets/fonts/Karla-Regular-subset.woff2) format(woff2);
+}
+
+@font-face {
+  font-family: "Karla Bold";
+  font-weight: 700;
+  font-display: swap;
+  src: url(./assets/fonts/Karla-Bold-subset.woff2) format(woff2);
+}
