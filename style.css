@@ -108,6 +108,13 @@ main {
 }
 
 /* GRID COMPONENT */
+.grid-component {
+  max-width: 20rem;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--gray-500) 0 4px 4px;
+}
+
 .grid-component h2,
 .grid-component h3,
 .grid-component strong {
