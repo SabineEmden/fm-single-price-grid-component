@@ -112,7 +112,7 @@ main {
   max-width: 20rem;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: var(--gray-500) 0 4px 4px;
+  box-shadow: 0 4px 4px hsla(0, 0%, 0%, 0.25);
 }
 
 .grid-component h2,
@@ -126,10 +126,12 @@ main {
 .grid-component h2 {
   font-size: 1.5rem;
   color: var(--teal-500);
+  margin-bottom: 1.5rem;
 }
 
 .grid-component h3 {
   font-size: 1.125rem;
+  margin-bottom: 1rem;
 }
 
 .grid-component strong {
@@ -142,7 +144,11 @@ main {
   line-height: 1.45;
   text-decoration: none;
   color: var(--white);
+  padding: 8px;
   background-color: var(--green-400);
+  border: 2px solid var(--green-400);
+  border-radius: 5px;
+  box-shadow: 0 10px 10px hsla(0, 0%, 0%, 0.1);
 }
 
 .grid-component ul {
@@ -156,10 +162,17 @@ main {
 .pitch {
   color: var(--gray-500);
   background-color: var(--white);
+  padding: 40px;
 }
 
 .pitch h3 {
   color: var(--green-400);
+  margin-bottom: 0.5rem;
+}
+
+.price,
+.features {
+  padding: 24px 40px;
 }
 
 .price {
