@@ -68,6 +68,7 @@ h6 {
   --white: hsl(0, 0%, 100%);
   --gray-500: hsl(218, 22%, 67%);
   --teal-500: hsl(179, 62%, 43%);
+  --teal-400: hsl(179, 48%, 52%);
   --green-400: hsl(71, 73%, 54%);
   --teal-100: hsl(204, 43%, 93%);
 }
@@ -94,6 +95,8 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.65;
+  color: var(--white);
+  background-color: var(--teal-100);
 }
 
 main {
@@ -115,6 +118,7 @@ main {
 
 .grid-component h2 {
   font-size: 1.5rem;
+  color: var(--teal-500);
 }
 
 .grid-component h3 {
@@ -130,13 +134,37 @@ main {
   font-weight: 700;
   line-height: 1.45;
   text-decoration: none;
+  color: var(--white);
+  background-color: var(--green-400);
 }
 
 .grid-component ul {
   font-size: 0.875rem;
   line-height: 1.45;
   list-style: none;
+  opacity: 75%;
   padding: 0;
+}
+
+.pitch {
+  color: var(--gray-500);
+  background-color: var(--white);
+}
+
+.pitch h3 {
+  color: var(--green-400);
+}
+
+.price {
+  background-color: var(--teal-500);
+}
+
+.period {
+  opacity: 50%;
+}
+
+.features {
+  background-color: var(--teal-400);
 }
 
 /* FOOTER */
@@ -144,7 +172,7 @@ footer {
   font-size: 0.875rem;
   line-height: 1.45;
   text-align: center;
-  padding-bottom: 24px;
+  padding: 0 40px 24px;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
