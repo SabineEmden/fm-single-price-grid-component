@@ -65,10 +65,11 @@ h6 {
 /* GENERAL STYLES AND LAYOUT */
 
 :root {
+  --white: hsl(0, 0%, 100%);
+  --gray-500: hsl(218, 22%, 67%);
   --teal-500: hsl(179, 62%, 43%);
   --green-400: hsl(71, 73%, 54%);
   --teal-100: hsl(204, 43%, 93%);
-  --gray-500: hsl(218, 22%, 67%);
 }
 
 @font-face {
@@ -83,4 +84,48 @@ h6 {
   font-weight: 700;
   font-display: swap;
   src: url(./assets/fonts/Karla-Bold-subset.woff2) format(woff2);
+}
+
+/* GRID COMPONENT */
+.grid-component {
+  font-family: "Karla Regular", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.65;
+}
+
+.grid-component h2,
+.grid-component h3,
+.grid-component strong {
+  font-family: "Karla Bold", sans-serif;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.grid-component h2 {
+  font-size: 1.5rem;
+}
+
+.grid-component h3 {
+  font-size: 1.125rem;
+}
+
+.grid-component strong {
+  font-size: 2rem;
+}
+
+.grid-component a {
+  font-family: "Karla Bold", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.45;
+  text-decoration: none;
+}
+
+.grid-component ul {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.45;
+  list-style: none;
+  padding: 0;
 }
