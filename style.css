@@ -120,7 +120,7 @@ main {
 }
 
 /* GRID COMPONENT */
-.grid-component {
+.component {
   display: grid;
   grid-template-rows: auto 1fr 1fr;
   max-width: 24rem;
@@ -129,30 +129,30 @@ main {
   box-shadow: 0 4px 4px hsla(0, 0%, 0%, 0.25);
 }
 
-.grid-component h2,
-.grid-component h3,
-.grid-component strong {
+.component h2,
+.component h3,
+.component strong {
   font-family: "Karla Bold", sans-serif;
   font-weight: 700;
   line-height: 1.15;
 }
 
-.grid-component h2 {
+.component h2 {
   font-size: 1.5rem;
   color: var(--teal-500);
   margin-bottom: 1.5rem;
 }
 
-.grid-component h3 {
+.component h3 {
   font-size: 1.125rem;
   margin-bottom: 1rem;
 }
 
-.grid-component strong {
+.component strong {
   font-size: 2rem;
 }
 
-.grid-component a {
+.component a {
   font-family: "Karla Bold", sans-serif;
   font-weight: 700;
   line-height: 1.45;
@@ -166,12 +166,12 @@ main {
   box-shadow: 0 10px 10px hsla(0, 0%, 0%, 0.1);
 }
 
-.grid-component a:hover {
+.component a:hover {
   color: var(--green-400);
   background-color: var(--white);
 }
 
-.grid-component ul {
+.component ul {
   font-size: 0.875rem;
   line-height: 1.45;
   list-style: none;
@@ -217,7 +217,7 @@ main {
 }
 
 @media (min-width: 48em) {
-  .grid-component {
+  .component {
     grid-template: auto auto / 1fr 1fr;
     max-width: 40rem;
   }
