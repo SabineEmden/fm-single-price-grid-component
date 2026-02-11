@@ -192,8 +192,9 @@ footer {
   font-size: 0.875rem;
   line-height: 1.45;
   text-align: center;
+  color: slategray;
   padding: 0 40px 24px;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--teal-500);
 }
