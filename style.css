@@ -216,6 +216,22 @@ main {
   background-color: var(--teal-400);
 }
 
+@media (min-width: 48em) {
+  .grid-component {
+    grid-template: auto auto / 1fr 1fr;
+    max-width: 40rem;
+  }
+
+  .pitch {
+    grid-column: span 2;
+  }
+
+  .subscription,
+  .features {
+    padding: 40px;
+  }
+}
+
 /* FOOTER */
 footer {
   font-size: 0.875rem;
