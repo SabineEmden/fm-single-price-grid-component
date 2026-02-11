@@ -121,7 +121,9 @@ main {
 
 /* GRID COMPONENT */
 .grid-component {
-  max-width: 20rem;
+  display: grid;
+  grid-template-rows: auto 1fr 1fr;
+  max-width: 24rem;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 4px hsla(0, 0%, 0%, 0.25);
@@ -154,6 +156,7 @@ main {
   font-family: "Karla Bold", sans-serif;
   font-weight: 700;
   line-height: 1.45;
+  text-align: center;
   text-decoration: none;
   color: var(--white);
   padding: 8px;
@@ -182,13 +185,22 @@ main {
   margin-bottom: 0.5rem;
 }
 
-.price,
+.subscription,
 .features {
   padding: 24px 40px;
 }
 
-.price {
+.subscription {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: var(--teal-500);
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .period {
