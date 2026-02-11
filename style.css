@@ -107,6 +107,18 @@ main {
   padding: 24px 40px;
 }
 
+/* UTILITIES */
+.sr-only {
+  border: 0;
+  clip-path: inset(50%);
+  height: 1px;
+  margin: 0;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 /* GRID COMPONENT */
 .grid-component {
   max-width: 20rem;
