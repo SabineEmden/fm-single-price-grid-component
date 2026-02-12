@@ -87,6 +87,7 @@ If this was a real-life project, I would want to talk to the designer and ask wh
 
 ### Useful resources
 
+- [CSS Reference: grid-template-rows](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/grid-template-rows) on MDN - The CSS reference helped me to figure out possible values for the `grid-template-rows` property.
 - [Essential Visually Hidden CSS Techniques for Web Accessibility](https://www.a11y-collective.com/blog/visually-hidden/) - I found the code snippet for the visually hidden text in this article.
 
 ## Author
