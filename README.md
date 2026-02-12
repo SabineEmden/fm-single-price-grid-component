@@ -1,6 +1,6 @@
 # Frontend Mentor - Single price grid component solution
 
-This is a solution to the [Single price grid component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Single price grid component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc). Frontend Mentor challenges help me improve my coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -13,15 +13,20 @@ This is a solution to the [Single price grid component challenge on Frontend Men
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
-  - [AI Collaboration](#ai-collaboration)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
 ### The challenge
+
+The brief for this project was to build out the single price grid component and get it looking as close to the design as possible, starting with the following assets:
+
+- Figma design file for mobile, tablet, and desktop layouts
+- JPEG design files for mobile and desktop layouts
+- Style guide for fonts, colors, etc.
+- Optimized image assets
+- HTML file with pre-written content
 
 Users should be able to:
 
@@ -43,7 +48,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Live Site](https://sabineemden.github.io/fm-single-price-grid-component/)
 
 ## My process
 
@@ -54,71 +59,54 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I used CSS Grid for the responsive layout of the component. The mobile design has one column. For the tablet and desktop design, the layout changes to two columns with the first row spanning both columns.
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
+In the mobile design, the hight of the first row is determined by its content. The second and third row have equal hight. I was able to match the design by using the `auto` keyword for the height of the first row and `1fr` for the second and third row.
 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.component {
+  display: grid;
+  grid-template-rows: auto 1fr 1fr;
+  max-width: 24rem;
+  /* ... */
 }
 ```
 
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
+For the tablet and desktop design, the grid changes to two rows with heights determined by their content and two columns of equal width.
+
+```css
+@media (min-width: 48em) {
+  .component {
+    grid-template: auto auto / 1fr 1fr;
+    max-width: 40rem;
+  }
+  /* ... */
+}
 ```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+My CSS Grid skills are still a bit rusty. I need to do a more thorough review of the topic.
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+If this was a real-life project, I would want to talk to the designer and ask whether there was any chance to increase the color contrasts to make the text more readable and meet web accessibility standards.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
-
-### AI Collaboration
-
-Describe how you used AI tools (if any) during this project. This helps demonstrate your ability to work effectively with AI assistants.
-
-- What tools did you use (e.g., ChatGPT, Claude, GitHub Copilot)?
-- How did you use them (e.g., debugging, generating boilerplate, brainstorming solutions)?
-- What worked well? What didn't?
-
-**Note: Delete this note and the content above if you didn't use AI, or replace with your own experience.**
+- [Essential Visually Hidden CSS Techniques for Web Accessibility](https://www.a11y-collective.com/blog/visually-hidden/) - I found the code snippet for the visually hidden text in this article.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+I'm an aspiring web developer and a former chemist. What I bring from chemistry to software development is a systematic approach to problem solving and the perseverance to not give up easily.
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- Frontend Mentor - [SabineEmden](https://www.frontendmentor.io/profile/SabineEmden)
+- Personal Website - [Sabine Emden](https://www.sabineemden.com/)
+- Mastodon - [@sabineemden](https://social.tchncs.de/@sabineemden)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+This project uses Josh Comeau's [CSS Reset](https://www.joshwcomeau.com/css/custom-css-reset/).
 
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+The font family in this project is [Karla](https://fonts.google.com/specimen/Karla). The fonts are licensed under the [Open Font License](https://openfontlicense.org/open-font-license-official-text/).
