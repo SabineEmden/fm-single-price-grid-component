@@ -39,7 +39,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- [Frontend Mentor solution](https://www.frontendmentor.io/solutions/single-price-grid-component-6iPlg0Zy20)
 - [Live Site](https://sabineemden.github.io/fm-single-price-grid-component/)
 
 ## My process
