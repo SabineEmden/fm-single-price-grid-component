@@ -160,7 +160,6 @@ main {
   text-decoration: none;
   color: var(--white);
   cursor: not-allowed;
-  pointer-events: auto;
   padding: 8px;
   background-color: var(--green-400);
   border: 2px solid var(--green-400);
