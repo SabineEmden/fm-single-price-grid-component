@@ -159,7 +159,6 @@ main {
   text-align: center;
   text-decoration: none;
   color: var(--white);
-  cursor: not-allowed;
   padding: 8px;
   background-color: var(--green-400);
   border: 2px solid var(--green-400);
